@@ -1,5 +1,8 @@
 import './App.css';
 import profile from './profile.JPG'
+import Projects from './project.js';
+import React, { useState, useEffect } from 'react';
+import ThemeToggler from './ThemeToggler';
 
 function App() {
   return (
@@ -45,6 +48,12 @@ function App() {
         <h3>Contact</h3>
         <p>Email: {' '}<a href="mail:dhlee4832@kaist.ac.kr" style={{ color: '#2a2a8f', fontWeight: 'bold' }}>
       dhlee4832@kaist.ac.kr
+    </a>{' '}</p>
+      </div>
+      <div className="My Works" style={{ textAlign: 'center' }}>
+        <h3>My Previous Works</h3>
+        <p>{' '}<a href="https://drive.google.com/drive/folders/1EqENBZmCR-nO5xjE92YyDrO0Xpp6gzq0?usp=share_link" style={{ color: '#2a2a8f', fontWeight: 'bold' }}>
+      Drive Link
     </a>{' '}</p>
       </div>
       <div

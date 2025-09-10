@@ -1,0 +1,54 @@
+/* src/index.css */
+
+/* 기본(라이트 모드) 테마의 색상표 */
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --heading-color: #007bff;
+  --section-bg-color: #f9f9f9;
+  --card-bg-color: #ffffff;
+  --tag-bg-color: #e7f3ff;
+  --tag-text-color: #007bff;
+  --header-bg-color: #000000;
+  --header-text-color: #ffffff;
+  --link-color: #61dafb;
+}
+
+/* 다크 모드일 때 적용될 색상표 */
+html[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --heading-color: #64b5f6;
+  --section-bg-color: #1e1e1e;
+  --card-bg-color: #2c2c2c;
+  --tag-bg-color: #3a5a78;
+  --tag-text-color: #bbdefb;
+  --header-bg-color: #1F1F1F;
+  --header-text-color: #e0e0e0;
+  --link-color: #61dafb;
+}
+
+/* 부드러운 색상 전환 효과 */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background-color: var(--background-color); /* 이제 body의 배경색은 변수 값을 따릅니다. */
+  color: var(--text-color); /* 글자 색도 변수 값을 따릅니다. */
+  font-family: sans-serif; /* 기본 폰트 설정 (예시) */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
